@@ -64,6 +64,7 @@ switch ($orientation) {
 // intance object dan memberikan pengaturan halaman PDF
 $pdf = new FPDF_CellFit($orientation,'mm',$paper_size);
 
+$pdf->AliasNbPages();
 // membuat halaman baru
 $pdf->AddPage();
 // setting jenis font yang akan digunakan
