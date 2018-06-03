@@ -74,9 +74,10 @@ $pdf->SetFont('Arial','B',16);
 $pdf->Cell(190,7,'LAPORAN DATA PEGAWAI',0,1,'C');
 $pdf->SetFont('Arial','B',12);
 $pdf->Cell(190,7,'PT SAMPLE FPDF',0,1,'C');
-
+// Garis atas untuk header
+$pdf->Line(10, 30, 210-10, 30);
 // Memberikan space kebawah agar tidak terlalu rapat
-$pdf->Cell(10,7,'',0,1);
+$pdf->Cell(10,10,'',0,1);
 
 $pdf->SetFont('Arial','B',10);
 $pdf->Cell(($width*(10/100)),6,'NIK',1,0);
